@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin Monitor</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header role="banner" class="site-header">
+        <div>
+            <h1>Bitcoin Monitor</h1>
+        </div>
+    </header>
+
+    <section class="welcome-page">
+        <div class="welcome">
+            <input value="Let's Go!" class="welcome-button" type="button" name="go">
+        </div>
+    </section>
+
+    <main>
+        <section class="price-tracker">
+            <form class="chart-cont">
+                <div class="time-button-cont">
+                    <input value="Today" class="time-button" type="button" name="today">
+                    <input value="One Week" class="time-button" type="button" name="week">
+                    <input value="One Month" class="time-button" type="button" name="month">
+                </div>
+                <div class ="money-button-cont">
+                    <input value="USD" class="money-button" type="button" name="dollar">
+                    <input value="EURO" class="money-button" type="button" name="euro">
+                </div>
+                <div id="chart"></div>
+            </form>
+        </section>
+
+        <section class="news-tracker">
+            <form class="article-cont">
+                <div class="title-cont">
+                    <h2>Bitcoin Newsfeed</h2>
+                    <input value="Update News" id="news-button" type="button" name="euro">
+                </div>
+                <div id="news-cont" class="hidden">
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- highcharts.js script for chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- main Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
