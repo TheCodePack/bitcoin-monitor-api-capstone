@@ -57,7 +57,7 @@
     width: 100px;
 }
 
-#chart {
+#container {
     position: relative;
     display: inline-block;
     border: 2px solid black;
@@ -77,3 +77,4 @@
 .hidden {
     display: none;
   }
+

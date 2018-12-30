@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bitcoin Monitor</title>
+    <link rel="stylesheet" type="text/css" href="https://www.highcharts.com/media/com_demo/css/highslide.css" />
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +34,7 @@
                     <input value="EURO" class="money-button" type="button" name="euro">
                 </div>
                 <!-- <div id="chart"></div> -->
-                <div id="chart"></div>
+                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
             </form>
         </section>
 
@@ -53,8 +54,18 @@
     <footer>
 
     </footer>
-    <!-- highcharts.js script for chart -->
+<!-- additional Highcharts files -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <script src="https://www.highcharts.com/media/com_demo/js/highslide-full.min.js"></script>
+    <script src="https://www.highcharts.com/media/com_demo/js/highslide.config.js" charset="utf-8"></script>
+    <!-- highcharts.js script for chart -->
+    <!-- <script src="Highcharts-7.0.1/code/highcharts.js"></script> -->
     <!-- Jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- main Javascript file -->
