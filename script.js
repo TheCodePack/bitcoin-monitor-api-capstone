@@ -11,6 +11,7 @@ function formatArticleParam (params) {
   return queryItems.join('&');
 };
 
+// displays articles in the DOM
 function displayArticles (responseJson, resultsLimit) {
     
     console.log(responseJson);
